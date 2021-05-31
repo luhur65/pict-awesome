@@ -5,6 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AwesomePICT | Download All Picture , It's Free</title>
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap"
+            rel="stylesheet">
+
     </head>
 
     <body>
@@ -24,20 +30,25 @@
             <div class="album py-5 bg-light">
                 <div class="container">
                     
-                    <h2 class="font-weight-bold mt-3"># List Images</h2>
+                    <div class="d-flex justify-content-between">
+                        <h2 class="font-weight-bold mt-3"># List Images</h2>
+                        <div class="tombol-refresh mt-3">
+                            <button class="btn btn-sm btn-primary shadow-sm">
+                                <i class="fas fa-undo-alt fa-fw"></i>
+                                Refresh list image
+                            </button>
+                        </div>
+                    </div>
 
                     <!-- custom elements -->
                     <alert-tips></alert-tips>
 
-                    <div class="tombol-refresh mt-2 mb-3">
-                        <button class="btn btn-md btn-primary shadow-sm">
-                            <i class="fas fa-undo-alt fa-fw"></i>
-                            Refresh list image
-                        </button>
-                    </div>
-
                     <div class="row" id="image">
                         <!-- list image -->
+                        <div class="col-lg text-center">
+                            <img src="./loader.gif" alt="Loader Gif" class="img-fluid">
+                            <p> Loading list images ... please wait </p>
+                        </div>
                     </div>
 
                 </div>
